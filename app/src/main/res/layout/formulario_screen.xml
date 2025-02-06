@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/back_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atrás"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/exit"
+            android:contentDescription="Icono de Atrás"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_formulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="formulario"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/subtitle_formulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="marsan"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_below="@id/title_formulario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/subtitle_formulario"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre y Apellidos"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo Electrónico"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="8dp"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/input_telefono"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:hint="Número Telef"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_background"
+                android:inputType="phone"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/input_dni"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:hint="DNI / NIE"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Datos del domicilio"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/input_localidad"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:hint="Localidad"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_background"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/input_cp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:hint="CP"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_background"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="top"
+            android:hint="Descripción breve del Trabajo"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/input_piezas"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Piezas Usadas"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_generar_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Generar PDF"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
