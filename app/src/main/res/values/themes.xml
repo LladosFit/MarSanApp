@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.YourApp" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#2475ED</item>
+        <item name="colorPrimaryVariant">#1E5BB3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:colorButtonNormal">#FFFFFF</item>
+    </style>
+</resources>
