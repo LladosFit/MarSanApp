@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/back_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atrás"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/exit"
+            android:contentDescription="Icono de Atrás"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado de Tareas"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/subtitle_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="marsan"
+        android:textSize="14sp"
+        android:textColor="#7F8C8D"
+        android:layout_below="@id/title_estado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_nueva_tarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Tarea"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/subtitle_estado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <GridLayout
+        android:id="@+id/grid_tareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_nueva_tarea"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_cliente1"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background_light"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cliente 1"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_cliente2"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background_light"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cliente 2"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_cliente3"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background_light"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cliente 3"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_cliente4"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_columnWeight="1"
+            android:text="Cliente 4"
+            android:background="@drawable/button_background_light"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_cliente5"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background_light"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cliente 5"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_cliente6"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_columnWeight="1"
+            android:text="Cliente 6"
+            android:background="@drawable/button_background_light"
+            android:textColor="#2C3E50"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+
+    </GridLayout>
+
+</RelativeLayout>
