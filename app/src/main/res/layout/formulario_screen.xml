@@ -31,7 +31,7 @@
             android:id="@+id/back_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/exit"
+            android:src="@drawable/atras"
             android:contentDescription="Icono de Atrás"/>
     </LinearLayout>
 
